@@ -1,5 +1,12 @@
 def map_to_negativize(source_array)
-
+	i = 0;
+  newArray = [];
+	while i < source_array.length do
+		newArray << "-" + source_array[i].to_s
+    puts newArray
+    i += 1
+	end
+  newArray
 end
 
 def map_to_no_change(source_array)
