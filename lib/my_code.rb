@@ -57,7 +57,6 @@ def reduce_to_any_true(source_array)
   newArray = [];
 	while i < source_array.length do
 		newArray[i] = "true";
-    puts newArray
 		i += 1
 	end
   newArray
