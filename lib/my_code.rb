@@ -58,5 +58,4 @@ def reduce_to_any_true(source_array)
 		source_array[i] = true;
 		i += 1
 	end
-	total
 end
