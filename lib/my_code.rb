@@ -62,10 +62,10 @@ def reduce_to_any_true(source_array)
 end
 
 def reduce_to_all_true(source_array)
-  n = 0 
+  n = 0
   while n < source_array.length do
     return false if !source_array[n]
-    n += 1 
+    n += 1
   end
   return true
 end
