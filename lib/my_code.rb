@@ -3,7 +3,6 @@ def map_to_negativize(source_array)
   newArray = [];
 	while i < source_array.length do
 		newArray << source_array[i] * -1
-    puts newArray
     i += 1
 	end
   newArray
@@ -18,7 +17,6 @@ def map_to_double(source_array)
 	newArray = [];
 	while i < source_array.length do
 		newArray << source_array[i] * 2
-		puts newArray
 		i += 1
 	end
 	newArray
@@ -29,7 +27,6 @@ def map_to_square(source_array)
 	newArray = [];
 	while i < source_array.length do
 		newArray << source_array[i] ** 2
-		puts newArray
 		i += 1
 	end
 	newArray
@@ -40,14 +37,19 @@ def reduce_to_total(source_array, starting_point)
 	newArray = [0];
 	while i < source_array.length do
 		newArray << source_array[i] + newArray
-		puts newArray
 		i += 1
 	end
 	newArray
 end
 
-def reduce_to_all_true(source_array)
-
+def reduce_to_total(source_array, starting_point = 0)
+	i = 0;
+	total = 0;
+	while i < source_array.length do
+		total = source_array[i] + total
+		i += 1
+	end
+	total
 end
 
 def reduce_to_any_true(source_array)
